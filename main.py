@@ -1,43 +1,31 @@
 import random
-
 #1.
-p = random.sample(range(101), 9)
-print("pole:", p)
+array1 = [43, 93, 10, 53, 71, 4, 81, 46, 51] 
 
-#2. p[0] a p[-1] ma znamenat prvni a posledni hodnotu a prostredni hodnotu dostaneme jenom s deleni ji pres 2
-h1 = p[0]
-ph = p[len(p) // 2]
-poh = p[-1]
-#f pred zavorkama oznacuje ze je tam vlozena hodnota promene ale slo by taky pouzit + str(neco)
-print(f"prvni hodnota: {h1}")
-print(f"prostredni hodnota: {ph}")
-print(f"posledni hodnota: {poh}")
+#2.
+sp = sorted(array1)
+ph = sp[len(sp) // 2]
+max = max(array1)
+min = min(array1)
+print(min, ph, max)
 
 #3.
-p[4] = 34
-print (p)
+array1[6] = 34
 
-#4.
-print (p[6])
+#4. 
+print(array1[8])
 
 #5.
-dp = len(p)
-print (dp)
+print (len(array1))
 
 #6.
-mh = min(p)
-mah = max(p)
-print (mh)
-print (mah)
+print(min, "a", max)
 
-#7
-p2 = random.sample(range(301), 5)
-print ("pole 2:", p2)
+#7.
+array2 = [7, 14, 75, 43, 98, 23]
 
-#8
-clp = sum(p2)
-print (clp)
+#8.
+print (sum(array2))
 
-#9
-pl = p2[1] + p2[4]
-print (pl)
+#9.
+print(array2[0] + array2[5])
